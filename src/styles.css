@@ -5,6 +5,12 @@
     font-style:normal;
     font-size: 50px;
 }
+
+hr.line-break{
+    background-color:rgb(0, 252, 0);
+    height:2px;
+    border: 1px solid rgb(0, 252, 0);
+}
 /**************************************/
 body{
     background-color:black;
@@ -37,19 +43,35 @@ input#book-cover{
 input#button-submit {
     background-color: black;
     color:rgb(0, 252, 0);
-    padding: 10px;
+    padding: 25px;
     margin: 20px;
     border: 3px solid rgb(0, 252, 0);
+    cursor:pointer;
+}
+input#button-submit:hover{
+    background-color: rgb(0, 252, 0);
+    color:black;
+    cursor:pointer
 }
 input#title{
     margin: 25px;
-    padding: 15px;
+    padding: 40px;
     border: 3px solid rgb(0, 252, 0);
+    background-color: black;
+    color:rgb(0, 252, 0);
+    font-size:larger;
 }
 input#author{
     margin:25px;
-    padding: 15px;
+    padding: 40px;
     border: 3px solid rgb(0, 252, 0);
+    background-color: black;
+    color:rgb(0, 252, 0);
+    font-size:larger;
+}
+/***************************************/
+::placeholder{
+    color:rgb(0, 252, 0);
 }
 /****************************************/
 button.return-button{
@@ -58,6 +80,8 @@ button.return-button{
     padding:10px;
     cursor: pointer;
     margin-left:45%;
+    margin-top:5px;
+    margin-bottom: 15px;
     border: 3px solid rgb(0, 252, 0);
 }
 button.return-button:hover{
