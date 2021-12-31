@@ -5,6 +5,9 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { TablesComponent } from './tables/tables.component';
 
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -12,7 +15,11 @@ import { TablesComponent } from './tables/tables.component';
     TablesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule,
+    RouterModule.forRoot([
+      {path:'tables',component:TablesComponent},
+      {path:'home',component:HomeComponent}])
   ],
   providers: [],
   bootstrap: [AppComponent]
