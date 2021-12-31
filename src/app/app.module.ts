@@ -18,6 +18,7 @@ import { RouterModule } from '@angular/router';
     BrowserModule,
     HttpClientModule,
     RouterModule.forRoot([
+      {path:'', redirectTo:'home',pathMatch:'full'},
       {path:'tables',component:TablesComponent},
       {path:'home',component:HomeComponent}])
   ],
