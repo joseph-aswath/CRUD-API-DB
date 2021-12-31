@@ -33,12 +33,14 @@ div.text-entry{
 
 }
 /****************************************/
-input#book-cover{
-    height: 90px;
-    width: 90px;
+label.book-cover{
     margin:35px;
+    display: block;
+    padding: 80px 15px ;
     border: 3px solid rgb(0, 252, 0);
-    
+}
+input[type=file]{
+    display:none;
 }
 input#button-submit {
     background-color: black;
