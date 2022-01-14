@@ -49,6 +49,7 @@ input#button-submit {
     margin: 20px;
     border: 3px solid rgb(0, 252, 0);
     cursor:pointer;
+    font-weight:bold;
 }
 input#button-submit:hover{
     background-color: rgb(0, 252, 0);
