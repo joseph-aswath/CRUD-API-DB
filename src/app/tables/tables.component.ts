@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BrainService } from '../_brain/-brain.service';
 
 @Component({
   selector: 'app-tables',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TablesComponent implements OnInit {
 
-  constructor() { }
+  constructor(public brainService:BrainService) { }
 
   ngOnInit(): void {
   }

@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { TablesComponent } from './tables/tables.component';
 
+import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
@@ -17,6 +18,7 @@ import { RouterModule } from '@angular/router';
   imports: [
     BrowserModule,
     HttpClientModule,
+    ReactiveFormsModule,
     RouterModule.forRoot([
       {path:'', redirectTo:'home',pathMatch:'full'},
       {path:'tables',component:TablesComponent},
