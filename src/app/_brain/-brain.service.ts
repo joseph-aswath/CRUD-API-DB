@@ -11,4 +11,7 @@ export class BrainService {
   /*function that posts data*/
   /*function that gets data from json */
   /*test with post man tool*/
+
+  //using FormData() for now here 
+  formData1 = new FormData();
 }

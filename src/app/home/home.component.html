@@ -5,20 +5,20 @@
     <button class="table-button" routerLink="/tables">TABLES</button>
 </div>
 
-<form>
+<form [formGroup]="books" (ngSubmit)="sendData()">
     <div class="container">
         <div class="image-entry">
             <label for="book-cover" class="book-cover"> UPLOAD BOOK COVER </label> <br>
-            <input type="file" id="book-cover">
+            <input formControlName="cover" type="file" id="book-cover">
         </div>
 
         <div class="text-entry">
             <label for="title"> ENTER TITLE: </label> 
-            <input type="text" id="title" placeholder="book title goes here...">
+            <input formControlName="title" type="text" id="title" placeholder="book title goes here...">
             <br>
 
             <label for="author"> AUTHOR NAME: </label>
-            <input type="text" id="author" placeholder="author name goes here...">
+            <input formControlName="author" type="text" id="author" placeholder="author name goes here...">
         </div>
     </div>   
         
