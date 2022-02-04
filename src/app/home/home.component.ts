@@ -24,12 +24,12 @@ export class HomeComponent implements OnInit {
   });
 
   //using FormData() here for now 
-   formData = new FormData();
+    formData = new FormData();
 
    sendData():any{
     this.formData.append('title',this.books.value.title.value);
     this.formData.append('author',this.books.value.author.value);
-    return this.http.post('/api/post',formData);
+    return this.http.post('/api/post',this.formData);
 
    }
 }

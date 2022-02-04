@@ -5,10 +5,10 @@ const app = express();
 const router = express.Router();
 const pgp = require('pg-promise');
 const db = pgp('postgres://username:password@host:port/database');
-//const Pool = require('pg').Pool;
+const Pool = require('pg').Pool;
 
 /******************************************************************* */
-/*
+
 const pool = new Pool ({
     user:'me',
     password:'password',
@@ -16,7 +16,7 @@ const pool = new Pool ({
     host:'localhost',
     port:5432
 })
-*/
+
 /*********************************************************************/
 app.use(router);
 app.use(bodyParser.json());
